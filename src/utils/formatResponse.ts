@@ -1,12 +1,12 @@
-interface ResponseType{
+interface jsonDataType{
     statusCode: number,
     success: boolean,
     data?: Object | null
     message: string
 }
 
-const formatResponse = (response: ResponseType) => { 
-    return response
+const formatResponse = (jsonData: jsonDataType) => { 
+    return jsonData
 }
 
 export default formatResponse

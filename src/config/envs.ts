@@ -6,7 +6,6 @@ const envs = {
     bcryptSalt: Number(process.env.BCRYPT_SALT) as number,
     jwtExpirationTime: process.env.JWT_EXPIRATION_TIME as string,
     jwtSecretKey: process.env.JWT_SECRET_KEY as string
-
 }
 
 export default envs

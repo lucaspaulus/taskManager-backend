@@ -1,4 +1,3 @@
-import {Response} from "express"
 import { UserModel } from "../models/user.model"
 import env from "../config/envs"
 import jwt from  "jsonwebtoken"

@@ -5,11 +5,7 @@ import log from "../utils/logger";
 const createUserController = async (request: Request, response: Response): Promise<Response> => {
   try {
     const user = await createUserService(request.body)
-    return response.status(201).json({
-        statusCode: 201,
-        success: true,
-        data: user
-    })
+    return response.status(user.statusCode).json(user)
     
   } catch (e: any) {
         log.error(e)

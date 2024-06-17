@@ -10,7 +10,7 @@ services:
       - DB_PORT=27017
       - DB_NAME=taskmanager
       - DB_USER=task
-      - DB_PASSWORD=bSZJPVKJImT9vkLn
+      - DB_PASSWORD=123456
     depends_on:
       - database
       
